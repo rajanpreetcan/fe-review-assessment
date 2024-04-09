@@ -1,0 +1,54 @@
+.custom-listing {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-listing span {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.custom-listing span:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.custom-listing select {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.custom-listing button {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding: 11px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.custom-listing select:focus, input:focus {
+    outline: none;
+}
+
+.custom-listing .disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+.custom-listing .disabled:hover {
+    background-color: #ddd;
+}

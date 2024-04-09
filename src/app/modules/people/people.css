@@ -1,7 +1,80 @@
-table {
+.people-table {
   width: 100%;
+  min-height: 330px;
+  border-width: 2px solid black;
+  border-collapse: collapse;
 }
 
-th {
+.people-table, .people-table th, .people-table td {
+  border: 2px solid black;
+}
+
+.header-cell {
   text-align: left;
+}
+
+.no-data-msg {
+  text-align: center;
+  margin-top: 24px;
+  color: #777;
+}
+
+.result-container {
+  width: 100%;
+  text-align: right;
+  padding-top: 24px;
+  border-top: 1px solid #ddd;
+  margin-top: 16px;
+}
+
+.sort-trigger {
+  cursor: pointer;
+}
+
+.sort-trigger label {
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.search-input {
+  width: 30vw;
+  font-size: 16px;
+  float: right;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.people-table tbody {
+  display: table-row-group;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup p {
+  margin: 0;
+}
+
+.popup button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
 }
